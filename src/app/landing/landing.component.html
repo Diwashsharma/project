@@ -1,0 +1,60 @@
+<!-- SECTION ONLY APPEARS ON LARGER SCREEN -->
+<div class="hide-on-small-screen">
+  <div class="homewrapper">
+    <nav>
+      <div class="logowrap">
+        <img src="../../assets/img/logo.png" alt="songfum retreat logo" />
+        <h2>
+          Songfum <br />
+          Retreat
+        </h2>
+      </div>
+      <ul>
+        <li></li>
+        <li routerLink="/">Home</li>
+        <li routerLink="/about-songfum-retreat">About</li>
+        <li routerLink="/songfum-cottages">Cottages</li>
+        <li routerLink="/songfum-retreats-wellness-center">Wellness-Center</li>
+        <li routerLink="/nearby-destinations">Nearby-Places</li>
+        <li routerLink="/book-a-cottage">Book-a-Room</li>
+      </ul>
+    </nav>
+    <div class="check">
+      <form action="">
+        <div class="fbox">
+          <label for="arrival">Arrival Date </label>
+          <input id="arrival" type="date" />
+        </div>
+        <div class="fbox">
+          <label for="departure">Departure Date </label>
+          <input id="departure" type="date" />
+        </div>
+        <div class="fbox">
+          <label for="cottages">Cottages : </label>
+          <select name="cottages" id="cottages" class="fa">
+            <option class="option" value="default">Select cottage</option>
+            <option value="cottage1 fas fa-hotel" class="fa">
+              &#xf594; Etok Bur
+            </option>
+            <option value="cottage2" class="fa">&#xf594;Etok Bur</option>
+            <option value="cottage3" class="fa">&#xf594;Etok Bur</option>
+            <option value="cottage4" class="fa">&#xf594;Etok Bur</option>
+          </select>
+        </div>
+        <div class="fbox">
+          <label for="meeting">Persons Arriving : </label>
+          <input type="date" value="1993-01-09" />
+        </div>
+      </form>
+    </div>
+    <div class="textbox">
+      <h1><span>Welcome to</span> <br />SONGFUM RETREAT</h1>
+    </div>
+  </div>
+  <div class="aboutsec"></div>
+  <app-footer></app-footer>
+</div>
+<!-- SECTION ONLY APPEARS ON SMALL SCREEN -->
+<div class="hide-on-large-screen">
+  <app-footer></app-footer>
+</div>

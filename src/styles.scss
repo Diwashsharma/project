@@ -1,0 +1,143 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Londrina+Solid&family=Satisfy&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$titleFont: "Londrina Solid", cursive;
+$secondaryFont: "Satisfy", cursive;
+$paraFont: "Advent Pro", sans-serif;
+nav {
+  height: 10vh;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  display: flex;
+  /* From https://css.glass */
+  //   background: rgba(255, 255, 255, 0.12);
+
+  //   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  //   backdrop-filter: blur(7.4px);
+
+  .logowrap {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    h2 {
+      font-family: $secondaryFont;
+      font-size: 20px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 30px;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      text-transform: capitalize;
+      margin-right: 20px;
+      font-size: 20px;
+      font-family: $titleFont;
+    }
+  }
+}
+.check {
+  height: 12vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.12);
+  background-color: white;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+
+  form {
+    display: flex;
+    .fbox {
+      padding: 10px;
+      height: 100%;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid grey;
+      font-family: $paraFont;
+      flex-direction: column;
+      .fa {
+        font-family: "Lato", "Font Awesome 5 Free", "Font Awesome 5 Brands";
+        font-weight: 900;
+      }
+      label {
+        font-size: 25px;
+        width: 70%;
+        text-align: left !important;
+      }
+      #arrival {
+        height: 34px;
+        font-size: 22px;
+        text-align: center;
+        font-family: $paraFont;
+      }
+      #departure {
+        height: 34px;
+        font-size: 22px;
+        text-align: center;
+        font-family: $paraFont;
+      }
+      #cottages {
+        height: 34px;
+        font-size: 22px;
+        text-align: center;
+      }
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        width: 34px;
+        background-image: url(https://icons.iconarchive.com/icons/dtafalonso/win-10x/256/Calendar-icon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      // ::-webkit-inner-spin-button {
+      //   display: none;
+      // }
+      // ::-webkit-calendar-picker-indicator {
+      //   background-color: white;
+      // }
+      // input[type="date"] {
+      //   font-size: 18px;
+      // }
+      // ::-webkit-datetime-edit-text {
+      //   color: #555555;
+      // }
+      // ::-webkit-datetime-edit-month-field {
+      //   color: #555555;
+      // }
+      // ::-webkit-datetime-edit-day-field {
+      //   color: #555555;
+      // }
+      // ::-webkit-datetime-edit-year-field {
+      //   color: #555555;
+      // }
+      // ::-webkit-calendar-picker-indicator {
+      //   background-image: url(http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Calendar-icon.png);
+      //   background-position: center;
+      //   background-size: 20px 20px;
+      //   background-repeat: no-repeat;
+      //   color: rgba(204, 204, 204, 0);
+      // }
+    }
+  }
+}
